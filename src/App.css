@@ -1,0 +1,207 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+   overflow-x: hidden; /* Previne o scroll horizontal */
+}
+
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #e9e3e3;
+  width: 100%;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.text-content {
+  flex: 1; /* Ocupa 50% do espaço */
+  text-align: center;
+}
+
+.text-content h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.text-content p {
+  font-size: 2rem;
+  color: #666;
+}
+
+.image-content {
+  flex: 1; /* Ocupa 50% do espaço */
+  text-align: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Deixe a imagem redonda, se preferir */
+}
+
+
+#about { 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
+  padding: 2rem;
+  height: 100vh; 
+  width: 100vw;
+  background-size: cover; 
+  background-position: center; 
+  color: rgb(5, 1, 1); 
+  position: relative; 
+  width: 100%;
+  }
+  
+  #about h1 {
+  font-size: 4rem; 
+  margin: 0; 
+  }
+
+  #about p {
+    font-size: 2rem;   /* Ajuste o tamanho da fonte conforme necessário */
+    line-height: 2;    /* Adiciona espaçamento entre as linhas para melhorar a legibilidade */        /* Opcional: ajusta a largura da seção */
+    margin: 0 auto;      
+  color: #030101; 
+  }
+
+  #contact { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    padding: 2rem;
+    height: 100vh; 
+    width: 100vw;
+    position: relative; 
+    width: 100%;
+    margin: 2rem 0;
+    }
+    
+    #contact h1 {
+      font-size: 4rem; 
+      margin-bottom: 8rem;
+    }
+  
+    #contact p {
+      font-size: 2rem; 
+      margin-top: 1rem; 
+      color: #070202; 
+    }
+
+    
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem; /* Espaçamento entre os botões */
+    }
+    
+    .btn-contact {
+      display: inline-block;
+      padding: 2rem 3rem;
+      background-color: #0073b1; /* Cor do botão LinkedIn */
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn-contact:hover {
+      background-color: #005582; /* Cor ao passar o mouse */
+    }
+    
+    .btn-contact:nth-child(1) {
+      background-color: #D44638; /* Cor do botão de email (Gmail) */
+    }
+    
+    .btn-contact:nth-child(1):hover {
+      background-color: #B23121; /* Cor ao passar o mouse (Gmail) */
+    }
+  
+
+
+
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+.project-list {
+  display: flex;
+  justify-content: space-between; /* Pode usar space-around ou space-evenly, se preferir */
+  flex-wrap: wrap; /* Permite que os cards quebrem em uma nova linha, se necessário */
+  padding: 2rem;
+  width: 100%;
+}
+
+#projetos h1{
+  font-size: 4rem;
+}
+
+.project {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  font-size: 2rem;
+}
+
+.project p {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+
+.project a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #a8a8a8;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #ff6347;
+}

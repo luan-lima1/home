@@ -1,0 +1,88 @@
+/* Estilos da barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo da navbar */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #282c34;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    position: absolute;
+    left: 2rem; /* Move a logo para a esquerda */
+}
+
+.navbar-logo h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Centraliza os botões */
+    flex-grow: 1; /* Permite que os links ocupem o espaço necessário */
+}
+
+.navbar-links li {
+    margin-left: 1.5rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ff6347; /* Cor laranja no hover */
+}
+
+/* Ícone de menu hambúrguer para mobile */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem; /* Move o ícone do menu hambúrguer para a direita */
+}
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Responsividade: Menu Mobile */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #282c34;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links li {
+        margin: 1rem 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}
