@@ -5,13 +5,19 @@
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) {
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f9f9f9;
-   overflow-x: hidden; /* Previne o scroll horizontal */
+   overflow-x: hidden; 
 }
 
 .home-section {
@@ -33,7 +39,7 @@ body {
 }
 
 .text-content {
-  flex: 1; /* Ocupa 50% do espaço */
+  flex: 1; 
   text-align: center;
 }
 
@@ -48,14 +54,14 @@ body {
 }
 
 .image-content {
-  flex: 1; /* Ocupa 50% do espaço */
+  flex: 1; 
   text-align: center;
 }
 
 .image-content img {
   max-width: 100%;
   height: auto;
-  border-radius: 50%; /* Deixe a imagem redonda, se preferir */
+  border-radius: 50%; 
 }
 
 
@@ -81,8 +87,8 @@ body {
   }
 
   #about p {
-    font-size: 2rem;   /* Ajuste o tamanho da fonte conforme necessário */
-    line-height: 2;    /* Adiciona espaçamento entre as linhas para melhorar a legibilidade */        /* Opcional: ajusta a largura da seção */
+    font-size: 2rem;  
+    line-height: 2;   
     margin: 0 auto;      
   color: #030101; 
   }
@@ -117,13 +123,13 @@ body {
     .contact-buttons {
       display: flex;
       justify-content: center;
-      gap: 1rem; /* Espaçamento entre os botões */
+      gap: 1rem; 
     }
     
     .btn-contact {
       display: inline-block;
       padding: 2rem 3rem;
-      background-color: #0073b1; /* Cor do botão LinkedIn */
+      background-color: #0073b1; 
       color: white;
       text-decoration: none;
       font-size: 2rem;
@@ -132,15 +138,15 @@ body {
     }
     
     .btn-contact:hover {
-      background-color: #005582; /* Cor ao passar o mouse */
+      background-color: #005582; 
     }
     
     .btn-contact:nth-child(1) {
-      background-color: #D44638; /* Cor do botão de email (Gmail) */
+      background-color: #D44638; 
     }
     
     .btn-contact:nth-child(1):hover {
-      background-color: #B23121; /* Cor ao passar o mouse (Gmail) */
+      background-color: #B23121; 
     }
   
 
